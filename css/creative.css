@@ -54,6 +54,9 @@ p {
 .bg-primary {
     background-color: #f05f40;
 }
+.bg-primary td {
+    color: black;
+}
 
 .bg-dark {
     color: #fff;
