@@ -93,24 +93,31 @@
                 <hr class="light">
 
                 <div class="row">
-                    <div class="col-lg-12">
-                        <a data-flickr-embed="true"  href="https://www.flickr.com/photos/138488356@N07/23429659289/in/dateposted-public/" title="Аделина"><img src="https://farm6.staticflickr.com/5710/23429659289_8568b5d45d_b.jpg" width="720" height="576" alt="Аделина"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                    <div class="span6">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <video src="https://www.flickr.com/photos/138488356@N07/23429659289/play/site/8568b5d45d/" width="720" height="576" poster="https://farm6.staticflickr.com/5710/23429659289_8568b5d45d_b.jpg" controls=""  class="embed-responsive-item" ></video>
+
+                        </div>
                     </div>
+                    <p></p>
                 </div>
-                <a href="#" class="btn btn-default btn-xl">Заказать</a>
+                <div class="row">
+                 <a href="#" class="btn btn-default btn-xl">Заказать</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="names" class="bg-primary">
+<section id="names" class="bg-names">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Выберите имя:</h2>
                 <hr class="primary">
                 <div id="example_wrapper" class="dataTables_wrapper col-md-6 col-md-offset-3">
-                    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%" role="grid"
+                    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%"
+                           role="grid"
                            aria-describedby="example_info" style="width: 100%;">
                         <thead>
                         <tr role="row">
@@ -1268,7 +1275,7 @@
             <div class="col-lg-12 text-center">
                 <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
                 <p></p>
-                <p>nimeline.tervitus.jouluvanalt{at}gmail.com</a></p>
+                <p>nimeline.tervitus.jouluvanalt@gmail.com</a></p>
             </div>
         </div>
     </div>
@@ -1295,8 +1302,7 @@
         var table = $('#example').DataTable();
 
         $('#example tbody').on('click', 'tr', function () {
-            var data = table.row(this).data();
-            //alert('You clicked on ' + data[0] + '\'s row');
+            var data = table.row(this).setAttribute();
         });
     });
 </script>
